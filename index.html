@@ -8,57 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        * {
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 1s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                        url('/api/placeholder/1920/1080') center/cover;
-        }
-
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-
-        .menu-btn__line {
-            transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-        }
-
-        .menu-btn.open .menu-btn__line:first-child {
-            transform: translateX(-50%) rotate(45deg);
-            top: 20px;
-        }
-
-        .menu-btn.open .menu-btn__line:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-btn.open .menu-btn__line:nth-child(3) {
-            transform: translateX(-50%) rotate(-45deg);
-            top: 20px;
-        }
-
-        .skill-bar {
-            width: 0;
-            transition: width 1s ease-in-out;
-        }
-    </style>
+   
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
@@ -312,53 +262,7 @@
         </div>
     </footer>
 
-    <script>
-        // Reveal Animation
-        function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-            reveals.forEach(element => {
-                const windowHeight = window.innerHeight;
-                const elementTop = element.getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    element.classList.add('active');
-                }
-            });
-        }
-
-        // Skill Bar Animation
-        function animateSkillBars() {
-            const skillBars = document.querySelectorAll('.skill-bar');
-            skillBars.forEach(bar => {
-                const width = bar.getAttribute('data-width');
-                bar.style.width = width + '%';
-            });
-        }
-
-        // Mobile Menu
-        const menuBtn = document.querySelector('.menu-btn');
-        const menuOverlay = document.querySelector('.menu-overlay');
-        const menuLinks = document.querySelectorAll('.menu-overlay a');
-
-        menuBtn.addEventListener('click', () => {
-            menuBtn.classList.toggle('open');
-            menuOverlay.classList.toggle('invisible');
-            menuOverlay.classList.toggle('opacity-0');
-        });
-
-        menuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                menuBtn.classList.remove('open');
-                menuOverlay.classList.add('invisible', 'opacity-0');
-            });
-        });
-
-        window.addEventListener('scroll', reveal);
-        window.addEventListener('load', () => {
-            reveal();
-            setTimeout(animateSkillBars, 500);
-        });
-    </script>
+    <script src="portfolio.js"></script>
+    
 </body>
 </html>
