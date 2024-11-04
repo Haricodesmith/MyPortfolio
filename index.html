@@ -4,19 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Portfolio</title>
+    <title class="font-bold">Hariharan </title>
+    <link rel="icon" type="image/x-icon" href="/assests/icons8-artstation-48.png">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
     
    
 </head>
-<body class="bg-gray-800 text-white">
+<body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 w-full z-50 bg-gray-900/90 backdrop-blur-md">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-blue-500">Portfolio</a>
+            <a href="#" class="text-2xl font-bold text-blue-500 flex items-center">
+              <img src="assests/icons8-artstation-48.png" class="h-6 w-6" alt=""><span class="px-3">I'm Hari.</span></a>
             <div class="hidden md:flex space-x-8">
                 <a href="#home" class="hover:text-blue-500 transition-colors">Home</a>
                 <a href="#about" class="hover:text-blue-500 transition-colors">About</a>
@@ -67,7 +70,7 @@
             <h2 class="text-4xl font-bold text-center mb-16 reveal">About Me</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="reveal">
-                    <img src="/api/placeholder/600/400" alt="Profile" class="rounded-lg shadow-xl w-full">
+                    <img src="/assests/Hari.png" alt="Profile" class="rounded-lg shadow-xl w-full">
                 </div>
                 <div class="reveal">
                     <h3 class="text-2xl font-bold mb-4">Who am I?</h3>
@@ -76,7 +79,7 @@
                     </p>
                     <p class="text-gray-300 mb-6">'Code is like humor. When you have to explain it, it’s bad.'</p>
                     
-                    <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full inline-block transition-colors">
+                    <a href="assests/Hariharan Frontend Fresher.pdf" download="" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full inline-block transition-colors">
                         Download CV
                     </a>
                 </div>
@@ -85,67 +88,85 @@
     </section>
 
     <!-- Skills Section -->
-     <section id="skills" class="py-8 md:py-20 px-10">
-      <!-- Headers -->
-      <div class="flex flex-col md:flex-row justify-around items-center mb-4 md:mb-8 gap-4">
-        <h1 class="text-3xl md:text-4xl font-bold text-center reveal">Technologies</h1>
-        <h1 class="text-3xl md:text-4xl font-bold text-center reveal">Tools</h1>
-      </div>
-      
-      <!-- Main content container -->
-      <div class="flex flex-col md:flex-row justify-around gap-8 md:gap-4 px-10">
-        <!-- Technologies icons -->
-        <div class="flex flex-wrap justify-center gap-8 md:gap-14 items-center w-full md:w-1/2 py-4 rounded-5xl px-10">
-          <i class="devicon-html5-plain-wordmark colored text-4xl md:text-5xl"></i>
-          <i class="devicon-css3-plain-wordmark colored text-4xl md:text-5xl"></i>
-          <i class="devicon-javascript-plain colored text-4xl md:text-5xl"></i>
-          <i class="devicon-bootstrap-plain-wordmark colored text-4xl md:text-5xl"></i>
-          <i class="devicon-tailwindcss-original colored text-4xl md:text-5xl"></i>
-          <i class="devicon-react-original-wordmark colored text-4xl md:text-5xl"></i>
+    <section id="skills" class="py-20 md:py-20 px-6 md:px-10">
+        <div class="flex flex-col md:flex-row items-center justify-around gap-8">
+            
+            <!-- Technologies Section -->
+            <div class="w-full md:w-1/2 p-6 md:p-10  rounded-3xl">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 reveal">Technologies</h1> 
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+                    <i class="devicon-html5-plain-wordmark colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-css3-plain-wordmark colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-javascript-plain colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-bootstrap-plain-wordmark colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-tailwindcss-original colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-react-original-wordmark colored text-4xl md:text-5xl"></i>
+                </div>
+            </div>
+            
+            <!-- Tools Section -->
+            <div class="w-full md:w-1/2 p-6 md:p-10  rounded-3xl">
+                <h1 class="text-3xl md:text-4xl font-bold text-center mb-8 reveal">Tools</h1>
+                <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+                    <i class="devicon-vscode-plain colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-github-original-wordmark text-4xl md:text-5xl"></i>
+                    <i class="devicon-netlify-plain-wordmark colored text-4xl md:text-5xl"></i>
+                    <i class="devicon-canva-original colored text-4xl md:text-5xl"></i>
+                </div>
+            </div>
+            
         </div>
-        
-        <!-- Tools icons -->
-        <div class="flex flex-wrap justify-center gap-8 md:gap-14 items-center w-full md:w-1/2 py-4 rounded-3xl">
-          <i class="devicon-vscode-plain colored text-4xl md:text-5xl"></i>
-          <i class="devicon-github-original-wordmark text-4xl md:text-5xl"></i>
-          <i class="devicon-netlify-plain-wordmark colored text-4xl md:text-5xl"></i>
-          <i class="devicon-canva-original colored text-4xl md:text-5xl"></i>
-        </div>
-      </div>
-    </section>
+    </section>      
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold text-center mb-16 reveal">My Projects</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project Card 1 -->
-                <div class="reveal project-card relative group">
-                    <img src="/api/placeholder/400/300" alt="Project 1" class="w-full rounded-lg">
-                    <div class="project-overlay absolute inset-0 bg-blue-500/90 opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-center p-6">
-                        <h3 class="text-xl font-bold mb-2">E-commerce Website</h3>
-                        <p class="mb-4">A full-featured online store built with React and Node.js</p>
-                        <a href="#" class="border-2 border-white hover:bg-white hover:text-blue-500 px-6 py-2 rounded-full transition-colors">View Project</a>
+                <!-- project 1 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                   
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Casterly Rock <br> <span class="text-xl">Restaurent Website</span></h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            View 
+                            <i class="fa-regular fa-eye ps-3"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- Project Card 2 -->
-                <div class="reveal project-card relative group">
-                    <img src="/api/placeholder/400/300" alt="Project 2" class="w-full rounded-lg">
-                    <div class="project-overlay absolute inset-0 bg-blue-500/90 opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-center p-6">
-                        <h3 class="text-xl font-bold mb-2">Social Media App</h3>
-                        <p class="mb-4">A social platform with real-time chat functionality</p>
-                        <a href="#" class="border-2 border-white hover:bg-white hover:text-blue-500 px-6 py-2 rounded-full transition-colors">View Project</a>
+
+                <!-- project 2 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"> Priyaprabu Artistry<br> <span class="text-xl">Parlour Website</span></h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            View 
+                            <i class="fa-regular fa-eye ps-3"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- Project Card 3 -->
-                <div class="reveal project-card relative group">
-                    <img src="/api/placeholder/400/300" alt="Project 3" class="w-full rounded-lg">
-                    <div class="project-overlay absolute inset-0 bg-blue-500/90 opacity-0 transition-opacity duration-300 rounded-lg flex flex-col justify-center items-center text-center p-6">
-                        <h3 class="text-xl font-bold mb-2">Task Management</h3>
-                        <p class="mb-4">A productivity app with drag-and-drop interface</p>
-                        <a href="#" class="border-2 border-white hover:bg-white hover:text-blue-500 px-6 py-2 rounded-full transition-colors">View Project</a>
+
+                <!-- project 3 -->
+                <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                    
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mine<br> <span class="text-xl">Portfolio Website</span></h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                        <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                            View 
+                            <i class="fa-regular fa-eye ps-3"></i>
+                        </a>
                     </div>
-                </div>
+                </div>  
             </div>
         </div>
     </section>
@@ -163,31 +184,31 @@
                     <div class="space-y-4">
                         <div class="flex items-center">
                             <i class="fas fa-map-marker-alt w-8 text-blue-500"></i>
-                            <span>New York, USA</span>
+                            <span>Nilaiyur, Madurai.</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-envelope w-8 text-blue-500"></i>
-                            <span>john@example.com</span>
+                            <span>hariharan956696@gmail.com</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fas fa-phone w-8 text-blue-500"></i>
-                            <span>+1 234 567 890</span>
+                            <span>+91 9566963567</span>
                         </div>
                     </div>
                 </div>
                 <div class="reveal">
-                    <form id="contactForm" action="https://formsubmit.co/hariharan956696@gmail.com" method="post" class="space-y-6">
+                    <form id="contactForm" action="https://formsubmit.co/hariharan956696@gmail.com" method="post" class="space-y-6" onsubmit="clearForm()">
                         <div class="grid md:grid-cols-2 gap-6">
-                            <input type="text" id="namee" name="namee" placeholder="Name" class="w-full bg-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
-                            <input type="email" id="email" name="email" placeholder="Email" class="w-full bg-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="text" id="namee" name="namee" placeholder="Name" class="w-full bg-gray-800 rounded-lg px-4 py-3  outline focus:ring-2 focus:ring-blue-500" required>
+                            <input type="email" id="email" name="email" placeholder="Email" class="w-full bg-gray-800 rounded-lg px-4 py-3 outline focus:ring-2 focus:ring-blue-500" required>
                         </div>
                         <div class="grid md:grid-cols-2 gap-6">
-                            <input type="number" id="number" name="number" placeholder="Number" class="w-full bg-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full bg-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <input type="number" id="number" name="number" placeholder="Number" class="w-full bg-gray-800 rounded-lg px-4 py-3 outline focus:ring-2 focus:ring-blue-500">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" class="w-full bg-gray-800 rounded-lg px-4 py-3 outline focus:ring-2 focus:ring-blue-500" required>
                         </div>
-                        <textarea placeholder="Message" name="message" id="message" rows="6" class="w-full bg-gray-800 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        <textarea placeholder="Message" name="message" id="message" rows="6" class="w-full bg-gray-800 rounded-lg px-4 py-3 outline focus:ring-2 focus:ring-blue-500" required></textarea>
                         <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://zippy-haupia-928196.netlify.app/">
                         <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-full transition-colors">
                             Send Message
                         </button>
@@ -207,17 +228,19 @@
                 <a href="https://www.linkedin.com/in/hariharan1308/" class="text-gray-400 hover:text-blue-500 transition-colors">
                     <i class="fab fa-linkedin text-2xl"></i>
                 </a>
-                <a href="" class="text-gray-400 hover:text-blue-500 transition-colors">
-                    <i class="fab fa-instagram text-2xl"></i>
-                </a>
             </div>
             <p class="text-gray-400">&copy; 2024 John Doe. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="portfolio.js"></script>
-    <script src="gmail.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script>
+        function clearForm() {
+            // Prevent form redirection for demonstration purposes
+            document.getElementById("contactForm").reset();
+        }
+    </script> -->
+    
     
 </body>
 </html>

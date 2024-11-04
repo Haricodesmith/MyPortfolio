@@ -45,3 +45,5 @@
             reveal();
             setTimeout(animateSkillBars, 500);
         });
+
+        
